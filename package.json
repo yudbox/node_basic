@@ -1,0 +1,29 @@
+{
+  "name": "node-basic",
+  "version": "1.0.0",
+  "description": "### Описание курса: В данном видеокурсе мы с вами рассмотрим Node.js, серверную технологию которая позволяет исполнять код написанный на JavaScript вне браузера. Разберём базовые концепции и встроенные модули, которые активно используются при разработке сервера. Рассмотрим механизм коммуникаций между сервером и браузером. Создадим базовый роутинг на чистом Node.js. Подключем Express и перепишем роутер. Научимся работать с динамичными данными с помощью шаблонизатора Node.js. Напишем новостное приложение с поддержкой CRUD операций и хранением данных в MongoDB. Создадим свой API по возврату данных из БД. И в заключение, загрузим готовое приложение на Heroku.",
+  "main": "app.js",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "nodemon ./app.js",
+    "watchServer": "nodemon ./nodeserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YauhenKavalchuk/node-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YauhenKavalchuk/node-js/issues"
+  },
+  "homepage": "https://github.com/YauhenKavalchuk/node-js#readme"
+}
