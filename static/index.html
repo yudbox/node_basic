@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
     <title>Download</title>
 </head>
 <body>
 <h1>Загрузка файлов на серверб pure node.js</h1>
 <hr>
-<form action="">
-    <div>
+<div class="photo_container">
+    <img src="./images/js_photo.png" alt="" class="icon-image">
+</div>
+<form id="test_form" class="form_container" action="">
+    <div class="file_container">
         <input id="upload" type="file">
     </div>
     <div>
-        <label for="upload">Upload</label>
+        <input type="text" name="image" placeholder="Name of image">
+        <input type="hidden" name="imagename" value="">
+        <input type="text" name="username" value="" placeholder="имя пользователя">
+    </div>
+    <div class="btn_container">
+        <button class="upload_btn">Submit</button>
     </div>
 </form>
 
