@@ -14,6 +14,7 @@
   "devDependencies": {},
   "scripts": {
     "watch": "nodemon ./app.js",
+    "watch2": "nodemon ./app2.js",
     "watchServer": "nodemon ./nodeserver.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

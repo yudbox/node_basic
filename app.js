@@ -48,8 +48,8 @@ http.createServer((request, response) => {
 
 
 
-}).listen(3000, () => {
-    console.log('server started at port 3000');
+}).listen(3000, (error) => {
+    error ? console.log('error', error) : console.log('server started at port 3000');
 })
 
 /*
