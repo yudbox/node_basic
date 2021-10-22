@@ -13,6 +13,8 @@ app.listen(PORT, (error) => {
   error ? console.log(error) : console.log(`server start at port ${PORT}`);
 });
 
+app.use(express.static('styles'));
+
 app.get("/", (req, res) => {
 //   res.send("Hello world");
 const title = 'home'
