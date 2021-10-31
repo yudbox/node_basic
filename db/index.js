@@ -1,4 +1,4 @@
-//Это программа для для подключения к БД 
+//Это программа для для подключения к БД СТАРЫЙ ПРОЕКТ
 const Sequelize = require('sequelize')
 
 const seq = new Sequelize('tableName', 'userName', 'password', {
