@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require('mongoose') 
 const methodOverride = require('method-override')
 const postRoutes = require('./routes/post-routes')
+const postApiRoutes = require('./routes/api-post-routes')
 const contactsRoutes = require('./routes/contacts-routes')
 const createPath = require('./helpers/create-path')
 
@@ -32,6 +33,7 @@ app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'))
 
 app.use(postRoutes)
+app.use(postApiRoutes)
 app.use(contactsRoutes)
 
 app.get("/", (req, res) => {
