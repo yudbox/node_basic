@@ -33,7 +33,7 @@ app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'))
 
 app.use(postRoutes)
-app.use(postApiRoutes)
+app.use(postApiRoutesg)
 app.use(contactsRoutes)
 
 app.get("/", (req, res) => {
